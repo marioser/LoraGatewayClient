@@ -1,0 +1,12 @@
+{
+    "name": "LoraGateway",
+    "description": "Comunicacion LoraWan Via TTN y Node-Red para control de alarmas remotas.",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flow.json",
+            "credentialsFile": "flow_cred.json"
+        }
+    }
+}
