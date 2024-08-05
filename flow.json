@@ -1127,7 +1127,9 @@
         "y": 140,
         "wires": [
             [
-                "c0895d1184de1d46"
+                "c0895d1184de1d46",
+                "d23cd4d0cd224e97",
+                "02da137181280b1e"
             ]
         ]
     },
@@ -1152,7 +1154,9 @@
         "y": 200,
         "wires": [
             [
-                "c0895d1184de1d46"
+                "c0895d1184de1d46",
+                "d23cd4d0cd224e97",
+                "02da137181280b1e"
             ]
         ]
     },
@@ -1198,7 +1202,9 @@
         "wires": [
             [
                 "c28f6f94b7a8340a",
-                "c0895d1184de1d46"
+                "c0895d1184de1d46",
+                "d23cd4d0cd224e97",
+                "02da137181280b1e"
             ]
         ]
     },
@@ -1279,6 +1285,30 @@
         "info": "",
         "x": 1000,
         "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d23cd4d0cd224e97",
+        "type": "iiot2k-gpiox-out",
+        "z": "f6f2187d.f17ca8",
+        "gpio": "02",
+        "mode": "output",
+        "activate": false,
+        "name": "",
+        "x": 550,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "02da137181280b1e",
+        "type": "iiot2k-gpiox-out",
+        "z": "f6f2187d.f17ca8",
+        "gpio": "03",
+        "mode": "output",
+        "activate": false,
+        "name": "",
+        "x": 550,
+        "y": 160,
         "wires": []
     },
     {
