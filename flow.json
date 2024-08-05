@@ -8,6 +8,1060 @@
         "env": []
     },
     {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Principal",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e1bf6f9b6b9080d0",
+        "type": "tab",
+        "label": "Estacion 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "36e81ef4acb28477",
+        "type": "tab",
+        "label": "Estacion 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0c5f0583d73599de",
+        "type": "tab",
+        "label": "Estacion 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "859c3987dbf4f052",
+        "type": "tab",
+        "label": "Estacion 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9f9ed44e98a2fd9d",
+        "type": "tab",
+        "label": "UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "be6d86c62fbc41b0",
+        "type": "subflow",
+        "name": "Encender/Apagar",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "8135a74c545c76bf"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 830,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "ccfb7c683173ed8f",
+                        "port": 0
+                    },
+                    {
+                        "id": "02aef65850289770",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 850,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "ccfb7c683173ed8f",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "inputLabels": [
+            "Feedback Boton"
+        ],
+        "outputLabels": [
+            "Boton",
+            "True/False"
+        ],
+        "status": {
+            "x": 800,
+            "y": 220,
+            "wires": [
+                {
+                    "id": "ccfb7c683173ed8f",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "53fe9a0861707a75",
+        "type": "subflow",
+        "name": "validationCommand",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "d387f416e7cb690d"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 620,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "2bc4b4cda3c78057",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "fd8cf3944cae5265",
+        "type": "subflow",
+        "name": "setVariablesFlow",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "448336e422e45c6c"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "status": {
+            "x": 480,
+            "y": 360,
+            "wires": [
+                {
+                    "id": "4e38a5769fc7f504",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "9ea4ff134399ca30",
+        "type": "group",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Logistica",
+        "style": {
+            "fill": "#c8e7a7",
+            "label": true
+        },
+        "nodes": [
+            "184576dc217222a5",
+            "06fbcd8a15e07595",
+            "a857fcf5ac084baa",
+            "928ecb7754f07842"
+        ],
+        "x": 154,
+        "y": 619,
+        "w": 432,
+        "h": 182
+    },
+    {
+        "id": "45c310f66f1703bf",
+        "type": "group",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Laboratorio",
+        "style": {
+            "stroke": "#a4a4a4",
+            "label": true,
+            "fill": "#c8e7a7"
+        },
+        "nodes": [
+            "3dc1ea21e3cf9391",
+            "50c018294de72b21",
+            "91608210b1a9e3fa",
+            "5f17320e8a70e4fa",
+            "b9380069376cdd60"
+        ],
+        "x": 134,
+        "y": 419,
+        "w": 472,
+        "h": 182,
+        "info": "Notas\n\nSiempre enviar el link de salida al modulo de escritura MQTT"
+    },
+    {
+        "id": "3987c7780219e0f8",
+        "type": "group",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Molino 1",
+        "style": {
+            "fill": "#c8e7a7",
+            "label": true
+        },
+        "nodes": [
+            "d09ed806cf806113",
+            "514fdb57550f1119",
+            "0376164c259d3059",
+            "b404ed65f26acb91"
+        ],
+        "x": 154,
+        "y": 1019,
+        "w": 432,
+        "h": 182
+    },
+    {
+        "id": "7b3279292da1d8fb",
+        "type": "group",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Molino 2",
+        "style": {
+            "fill": "#c8e7a7",
+            "label": true
+        },
+        "nodes": [
+            "e2bbc89556ca2ed7",
+            "7b66b7bed75d5c2a",
+            "feabef15d885f55e",
+            "5f027ec7369bdad0"
+        ],
+        "x": 154,
+        "y": 819,
+        "w": 432,
+        "h": 182
+    },
+    {
+        "id": "0e90a54126955e0b",
+        "type": "group",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Contenedores",
+        "style": {
+            "stroke": "#a4a4a4",
+            "label": true,
+            "fill": "#c8e7a7"
+        },
+        "nodes": [
+            "c6b922752e428a64",
+            "a80f8a754a0eea72",
+            "6c92f7c93d5747b9",
+            "70b0eba5a847a894",
+            "870729d6ab3c3981"
+        ],
+        "x": 134,
+        "y": 19,
+        "w": 492,
+        "h": 182,
+        "info": "Notas\n\nSiempre enviar el link de salida al modulo de escritura MQTT"
+    },
+    {
+        "id": "ce2ec831b45df6aa",
+        "type": "group",
+        "z": "859c3987dbf4f052",
+        "name": "save commands",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "722728d29d7df2d5",
+            "1bdbdb2dbe7bc628",
+            "064cf99b73bc261b"
+        ],
+        "x": 674,
+        "y": 299,
+        "w": 332,
+        "h": 162
+    },
+    {
+        "id": "ba0550e174c0fa21",
+        "type": "group",
+        "z": "0c5f0583d73599de",
+        "name": "save commands",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "af78e1034a9c178b",
+            "047861daa3c19438",
+            "7f90accd598a266e"
+        ],
+        "x": 714,
+        "y": 299,
+        "w": 332,
+        "h": 162
+    },
+    {
+        "id": "141f7d3ecefa49e2",
+        "type": "group",
+        "z": "36e81ef4acb28477",
+        "name": "save commands",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "6aab9d09ac1ec7f7",
+            "9cb31c3b480ef526",
+            "c032a482bfb99070"
+        ],
+        "x": 714,
+        "y": 299,
+        "w": 332,
+        "h": 162
+    },
+    {
+        "id": "c22d7f4754d8f1a9",
+        "type": "group",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "Validate",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "f7968e394cb3824d",
+            "a238a3789eb986f8",
+            "db22a907716be949",
+            "694dd5ed2aa9e9ca",
+            "fe17098243e1ae4f",
+            "b2936745ef0f3d46",
+            "36265ea7956e3a72"
+        ],
+        "x": 754,
+        "y": 39,
+        "w": 782,
+        "h": 162
+    },
+    {
+        "id": "7b13950581c98be9",
+        "type": "group",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "save commands",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "23dac47d281c0a74",
+            "a97e55ab23f23146",
+            "0284b05dc36e90f6"
+        ],
+        "x": 754,
+        "y": 299,
+        "w": 332,
+        "h": 162
+    },
+    {
+        "id": "07a501257e6c0149",
+        "type": "group",
+        "z": "36e81ef4acb28477",
+        "name": "Validate",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "a671c273e55bc45e",
+            "4f86865a29c341b9",
+            "05d631c5dbb4481a",
+            "78c69548b6db1006",
+            "949e292bee1e4f43",
+            "00aa770b41748a43",
+            "9f1919ad66216e27"
+        ],
+        "x": 674,
+        "y": 39,
+        "w": 782,
+        "h": 162
+    },
+    {
+        "id": "6b384d72e0641a20",
+        "type": "group",
+        "z": "0c5f0583d73599de",
+        "name": "Validate",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "28f0635e41358d4d",
+            "1d999a1ef3bf0799",
+            "58a1d69def2db8ec",
+            "5af6bd747834241a",
+            "3c3309a5b5ba72c9",
+            "479a6b10cfe7d180",
+            "90d83d225f387e52"
+        ],
+        "x": 774,
+        "y": 59,
+        "w": 782,
+        "h": 162
+    },
+    {
+        "id": "869f1b789f0ed484",
+        "type": "group",
+        "z": "859c3987dbf4f052",
+        "name": "Validate",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "5a518bc8cd8ee03d",
+            "5354c01795b2e7e7",
+            "7a741f086dc22784",
+            "f56e8b51a45061f9",
+            "2e44d2ea0f20ba5b",
+            "880aeb6a7204af17",
+            "6fb13acdd9c8c48c"
+        ],
+        "x": 694,
+        "y": 19,
+        "w": 782,
+        "h": 162
+    },
+    {
+        "id": "86cd9e49cb39ac18",
+        "type": "mqtt-broker",
+        "name": "MQTT TTN",
+        "broker": "192.168.1.191",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b187da100a6e41ab",
+        "type": "ui_tab",
+        "name": "Sistema de alarmas Ultracem",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0f85cec03fdc79c0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Ultracem",
+                "default": "#4B7930",
+                "baseColor": "#ffca02",
+                "baseFont": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#ffca02",
+                    "value": "#ffca02",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ffca02",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#003e78",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#003e78",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#ffca02",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#003e78",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#003e78",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#ffca02",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#ffca02",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#003e78",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Century Gothic,CenturyGothic,AppleGothic,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Sistema de Alarmas Ultracem",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "47d24faaca21391a",
+        "type": "ui_group",
+        "name": "Alarmas planta Ultracem",
+        "tab": "b187da100a6e41ab",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5c38a953c0b01237",
+        "type": "ui_group",
+        "name": "Estado Alarmas",
+        "tab": "b187da100a6e41ab",
+        "order": 2,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dfe11060863dd3c1",
+        "type": "ui_tab",
+        "name": "Activacion individual",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1b3982f888f2aa11",
+        "type": "ui_group",
+        "name": "Alarma zona Contenedores",
+        "tab": "dfe11060863dd3c1",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cddde00d988ef4d5",
+        "type": "ui_group",
+        "name": "Alarma zona Logistica",
+        "tab": "dfe11060863dd3c1",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "35eb59fbc8dbdd30",
+        "type": "ui_group",
+        "name": "Alarma zona Laboratorio",
+        "tab": "dfe11060863dd3c1",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "54897153aa51c77e",
+        "type": "ui_group",
+        "name": "Alarma zona Molino 1",
+        "tab": "dfe11060863dd3c1",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d2451bc3477ac4e9",
+        "type": "ui_group",
+        "name": "Alarma zona Molino 2",
+        "tab": "dfe11060863dd3c1",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2943266073b560ae",
+        "type": "change",
+        "z": "be6d86c62fbc41b0",
+        "name": "setEncender",
+        "rules": [
+            {
+                "t": "set",
+                "p": "colour",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "label",
+                "pt": "msg",
+                "to": "<i class=\"fa fa-bell-o\"></i> APAGAR",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,1,1]",
+                "tot": "bin"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 120,
+        "wires": [
+            [
+                "ccfb7c683173ed8f"
+            ]
+        ]
+    },
+    {
+        "id": "d38cdbe37b97e9c0",
+        "type": "change",
+        "z": "be6d86c62fbc41b0",
+        "name": "setApagar",
+        "rules": [
+            {
+                "t": "set",
+                "p": "colour",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "label",
+                "pt": "msg",
+                "to": "<i class=\"fa fa-bell-o\"></i> ENCENDER",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,0,0]",
+                "tot": "bin"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "ccfb7c683173ed8f"
+            ]
+        ]
+    },
+    {
+        "id": "ccfb7c683173ed8f",
+        "type": "rbe",
+        "z": "be6d86c62fbc41b0",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 650,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "142748e7a43fff23",
+        "type": "function",
+        "z": "be6d86c62fbc41b0",
+        "name": "getEstadoAnterior",
+        "func": "var state = context.state || false;\nstate = !state;\ncontext.state = state;\nif (state) { return [msg,null]; }\nelse { return [null,msg]; }\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 100,
+        "wires": [
+            [
+                "d38cdbe37b97e9c0"
+            ],
+            [
+                "2943266073b560ae"
+            ]
+        ]
+    },
+    {
+        "id": "8135a74c545c76bf",
+        "type": "switch",
+        "z": "be6d86c62fbc41b0",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "boolean",
+                "vt": "boolean"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 110,
+        "y": 40,
+        "wires": [
+            [
+                "142748e7a43fff23"
+            ]
+        ]
+    },
+    {
+        "id": "02aef65850289770",
+        "type": "inject",
+        "z": "be6d86c62fbc41b0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "colour",
+                "v": "green",
+                "vt": "str"
+            },
+            {
+                "p": "accion",
+                "v": "[3,0,0]",
+                "vt": "bin"
+            },
+            {
+                "p": "label",
+                "v": "<i class=\"fa fa-bell-o\"></i> ENCENDER",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 470,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d387f416e7cb690d",
+        "type": "function",
+        "z": "53fe9a0861707a75",
+        "name": "",
+        "func": "const payload = msg.payload;\nconst payloadSend = flow.get(\"payloadSend\");\n\nif (payload !== payloadSend){\n    var resend;\n    payloadResend =payloadSend;\n    msg.payload = payloadResend\n    resend = resend ++;\n    flow.set(\"resend\", resend);\n    return msg\n}else{\n    var confirm = true\n    flow.set(\"resend\",0);\n    flow.set(\"confirmCommand\",true)\n    msg.payload = null\n    return msg\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "dc7da7677c73c154"
+            ]
+        ]
+    },
+    {
+        "id": "dc7da7677c73c154",
+        "type": "switch",
+        "z": "53fe9a0861707a75",
+        "name": "setResendCommand",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 120,
+        "wires": [
+            [
+                "2bc4b4cda3c78057"
+            ]
+        ]
+    },
+    {
+        "id": "2bc4b4cda3c78057",
+        "type": "change",
+        "z": "53fe9a0861707a75",
+        "name": "setPayloadSend",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payloadSend",
+                "tot": "flow",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94b5b4c88e44e388",
+        "type": "change",
+        "z": "fd8cf3944cae5265",
+        "name": "setFlowTrue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "448336e422e45c6c",
+        "type": "switch",
+        "z": "fd8cf3944cae5265",
+        "name": "getCommand",
+        "property": "payload.downlinks[0].frm_payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "AwEB",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AwAA",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "94b5b4c88e44e388"
+            ],
+            [
+                "1e0820a01023285c"
+            ]
+        ]
+    },
+    {
+        "id": "1e0820a01023285c",
+        "type": "change",
+        "z": "fd8cf3944cae5265",
+        "name": "setFlowFalse",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e38a5769fc7f504",
+        "type": "complete",
+        "z": "fd8cf3944cae5265",
+        "name": "",
+        "scope": [
+            "94b5b4c88e44e388",
+            "1e0820a01023285c"
+        ],
+        "uncaught": false,
+        "x": 230,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "54b91b85958b76a6",
         "type": "inject",
         "z": "2a99a339a845f8a5",
@@ -50,6 +1104,3858 @@
         "statusType": "auto",
         "x": 360,
         "y": 80,
+        "wires": []
+    },
+    {
+        "id": "72e67aff9ad92cc0",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "c0895d1184de1d46"
+            ]
+        ]
+    },
+    {
+        "id": "cd6b25bd841539e1",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "c0895d1184de1d46"
+            ]
+        ]
+    },
+    {
+        "id": "c5e11f7433bd85d3",
+        "type": "change",
+        "z": "f6f2187d.f17ca8",
+        "name": "General",
+        "rules": [
+            {
+                "t": "change",
+                "p": "colour",
+                "pt": "msg",
+                "from": "green",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "colour",
+                "pt": "msg",
+                "from": "red",
+                "fromt": "str",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "move",
+                "p": "colour",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "c28f6f94b7a8340a",
+                "c0895d1184de1d46"
+            ]
+        ]
+    },
+    {
+        "id": "bc3ecc7fb17f628a",
+        "type": "link in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "links": [
+            "d4f9f5cdcd11d81b",
+            "9ab6b8b5fa235f8f",
+            "617b98727162ffdb",
+            "5f027ec7369bdad0"
+        ],
+        "x": 35,
+        "y": 260,
+        "wires": [
+            [
+                "c5e11f7433bd85d3"
+            ]
+        ]
+    },
+    {
+        "id": "c28f6f94b7a8340a",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c0895d1184de1d46",
+        "type": "link out",
+        "z": "f6f2187d.f17ca8",
+        "name": "Indicador UI - Estacion  Principal",
+        "mode": "link",
+        "links": [
+            "5a172d5368623a96",
+            "4c79421f31121e08"
+        ],
+        "x": 475,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "16b798499c8c06ca",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "Envia el indicador de estado al flujo de UI",
+        "info": "",
+        "x": 1020,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e0c38c54425a4781",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "Esta estacion es independiente y de activacion directa por la PCB principal de la RPI",
+        "info": "",
+        "x": 320,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "3be2b0e0cdbf8db0",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "Estado desactivado: 1 - Activado: 0",
+        "info": "",
+        "x": 1000,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4d97dac6dab79ca7",
+        "type": "mqtt in",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "Estacion 2",
+        "topic": "v3/seguridad-ultra/devices/estacion2-ultracem/up",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "86cd9e49cb39ac18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 160,
+        "wires": [
+            [
+                "4611311ae17d5201"
+            ]
+        ]
+    },
+    {
+        "id": "d6f97ae857255922",
+        "type": "debug",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3f2bdf6ce068868c",
+        "type": "mqtt out",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "Estacion 2",
+        "topic": "v3/seguridad-ultra/devices/estacion2-ultracem/down/push",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "86cd9e49cb39ac18",
+        "x": 730,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9b284cc15227b570",
+        "type": "inject",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "",
+        "props": [
+            {
+                "p": "accion",
+                "v": "[3,0,0]",
+                "vt": "bin"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "9f86ec595296b9e6"
+            ]
+        ]
+    },
+    {
+        "id": "9f86ec595296b9e6",
+        "type": "function",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "SetArctivarDesactivar",
+        "func": "const payload = msg.payload\n//msg.accion proviene de UI\n\nif (payload == true ){\nreturn {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 2,\n      \"frm_payload\": msg.accion.toString(\"base64\"),\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n}else{\nreturn {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 2,\n      \"frm_payload\": msg.accion.toString(\"base64\"),\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "d49e04ebc0279539",
+                "a97e55ab23f23146",
+                "afceb614d10548a3"
+            ]
+        ]
+    },
+    {
+        "id": "4611311ae17d5201",
+        "type": "json",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 350,
+        "y": 160,
+        "wires": [
+            [
+                "3429549c908255ee",
+                "d6f97ae857255922"
+            ]
+        ]
+    },
+    {
+        "id": "2b49ba352fa8a47d",
+        "type": "comment",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "Estacion 2 - Logistica",
+        "info": "",
+        "x": 180,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3429549c908255ee",
+        "type": "change",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "Estados",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "from": "OFF",
+                "fromt": "str",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "from": "ON",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "move",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 160,
+        "wires": [
+            [
+                "bc0551ca9c7c7e31",
+                "a238a3789eb986f8"
+            ]
+        ]
+    },
+    {
+        "id": "11def91591f9fbfa",
+        "type": "link in",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "setActivarDesactivar2",
+        "links": [
+            "36265ea7956e3a72",
+            "928ecb7754f07842",
+            "8cc9e3921315111d"
+        ],
+        "x": 205,
+        "y": 280,
+        "wires": [
+            [
+                "9f86ec595296b9e6"
+            ]
+        ]
+    },
+    {
+        "id": "bc0551ca9c7c7e31",
+        "type": "link out",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "Indicador UI - Estacion 2 Zona Logistica",
+        "mode": "link",
+        "links": [
+            "d2bc44a39eb2f04f",
+            "565759377b3bec7a",
+            "3c30aa170b8695f6"
+        ],
+        "x": 585,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d49e04ebc0279539",
+        "type": "debug",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "Request",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f7968e394cb3824d",
+        "type": "switch",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "c22d7f4754d8f1a9",
+        "name": "setResendCommand",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "boolean",
+                "vt": "boolean"
+            }
+        ],
+        "checkall": "true",
+        "repair": true,
+        "outputs": 1,
+        "x": 900,
+        "y": 120,
+        "wires": [
+            [
+                "db22a907716be949"
+            ]
+        ]
+    },
+    {
+        "id": "a238a3789eb986f8",
+        "type": "function",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "c22d7f4754d8f1a9",
+        "name": "",
+        "func": "const payload = msg.payload;\nconst payloadSend = flow.get(\"payloadSend\");\n\nif (payload !== payloadSend){\n    var resend;\n    payloadResend =payloadSend;\n    msg.payload = payloadResend\n    resend = resend ++;\n    flow.set(\"resend\", resend);\n    return msg\n}else{\n    var confirm = true\n    flow.set(\"resend\",0);\n    flow.set(\"confirmCommand\",true)\n    msg.payload = null\n    return msg\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 80,
+        "wires": [
+            [
+                "f7968e394cb3824d"
+            ]
+        ]
+    },
+    {
+        "id": "db22a907716be949",
+        "type": "change",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "c22d7f4754d8f1a9",
+        "name": "setPayloadSend",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payloadSend",
+                "tot": "flow",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1100,
+        "y": 120,
+        "wires": [
+            [
+                "694dd5ed2aa9e9ca"
+            ]
+        ]
+    },
+    {
+        "id": "23dac47d281c0a74",
+        "type": "change",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "7b13950581c98be9",
+        "name": "setFlowTrue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a97e55ab23f23146",
+        "type": "switch",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "7b13950581c98be9",
+        "name": "getCommand",
+        "property": "payload.downlinks[0].frm_payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "AwEB",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AwAA",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 860,
+        "y": 380,
+        "wires": [
+            [
+                "23dac47d281c0a74"
+            ],
+            [
+                "0284b05dc36e90f6"
+            ]
+        ]
+    },
+    {
+        "id": "0284b05dc36e90f6",
+        "type": "change",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "7b13950581c98be9",
+        "name": "setFlowFalse",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e101e61601e646f",
+        "type": "debug",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1630,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "694dd5ed2aa9e9ca",
+        "type": "switch",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "c22d7f4754d8f1a9",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1250,
+        "y": 120,
+        "wires": [
+            [
+                "b2936745ef0f3d46"
+            ],
+            [
+                "fe17098243e1ae4f"
+            ]
+        ]
+    },
+    {
+        "id": "b2936745ef0f3d46",
+        "type": "change",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "c22d7f4754d8f1a9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,1,1]",
+                "tot": "bin"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1360,
+        "y": 80,
+        "wires": [
+            [
+                "9e101e61601e646f",
+                "36265ea7956e3a72"
+            ]
+        ]
+    },
+    {
+        "id": "fe17098243e1ae4f",
+        "type": "change",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "c22d7f4754d8f1a9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,0,0]",
+                "tot": "bin"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1360,
+        "y": 160,
+        "wires": [
+            [
+                "9e101e61601e646f",
+                "36265ea7956e3a72"
+            ]
+        ]
+    },
+    {
+        "id": "36265ea7956e3a72",
+        "type": "link out",
+        "z": "e1bf6f9b6b9080d0",
+        "g": "c22d7f4754d8f1a9",
+        "name": "Validate Estacion 2",
+        "mode": "link",
+        "links": [
+            "11def91591f9fbfa"
+        ],
+        "x": 1495,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "afceb614d10548a3",
+        "type": "delay",
+        "z": "e1bf6f9b6b9080d0",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "3f2bdf6ce068868c"
+            ]
+        ]
+    },
+    {
+        "id": "94e5225eec8fd374",
+        "type": "mqtt in",
+        "z": "36e81ef4acb28477",
+        "name": "Estacion 3",
+        "topic": "v3/seguridad-ultra/devices/estacion3-ultracem/up",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "86cd9e49cb39ac18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "f77f79eaff48aea5"
+            ]
+        ]
+    },
+    {
+        "id": "0419de97da1e675f",
+        "type": "debug",
+        "z": "36e81ef4acb28477",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "774605ad717a89e5",
+        "type": "mqtt out",
+        "z": "36e81ef4acb28477",
+        "name": "Estacion 3",
+        "topic": "v3/seguridad-ultra/devices/estacion3-ultracem/down/push",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "86cd9e49cb39ac18",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6295a8b341c9215a",
+        "type": "inject",
+        "z": "36e81ef4acb28477",
+        "name": "",
+        "props": [
+            {
+                "p": "accion",
+                "v": "[3,0,0]",
+                "vt": "bin"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "003b4dd744854651"
+            ]
+        ]
+    },
+    {
+        "id": "003b4dd744854651",
+        "type": "function",
+        "z": "36e81ef4acb28477",
+        "name": "SetArctivarDesactivar",
+        "func": "const payload = msg.payload\n//msg.accion proviene de UI\n\nif (payload == true ){\nreturn {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 2,\n      \"frm_payload\": msg.accion.toString(\"base64\"),\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n}else{\nreturn {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 2,\n      \"frm_payload\": msg.accion.toString(\"base64\"),\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "9cb31c3b480ef526",
+                "6c2955ac7622fd3e"
+            ]
+        ]
+    },
+    {
+        "id": "f77f79eaff48aea5",
+        "type": "json",
+        "z": "36e81ef4acb28477",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "0419de97da1e675f",
+                "b8b7eb254b85b7ce"
+            ]
+        ]
+    },
+    {
+        "id": "51d29a5a5920309b",
+        "type": "comment",
+        "z": "36e81ef4acb28477",
+        "name": "Estacion 3 - Contenedores",
+        "info": "",
+        "x": 150,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b8b7eb254b85b7ce",
+        "type": "change",
+        "z": "36e81ef4acb28477",
+        "name": "Estados",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "from": "OFF",
+                "fromt": "str",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "from": "ON",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "move",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "ab58c1020ba1d709",
+                "4f86865a29c341b9"
+            ]
+        ]
+    },
+    {
+        "id": "da8a3270934a8344",
+        "type": "link in",
+        "z": "36e81ef4acb28477",
+        "name": "setActivarDesactivar3",
+        "links": [
+            "70b0eba5a847a894",
+            "9ab6b8b5fa235f8f",
+            "9f1919ad66216e27",
+            "c96abd4e1e453454"
+        ],
+        "x": 185,
+        "y": 260,
+        "wires": [
+            [
+                "003b4dd744854651"
+            ]
+        ]
+    },
+    {
+        "id": "ab58c1020ba1d709",
+        "type": "link out",
+        "z": "36e81ef4acb28477",
+        "name": "Indicador UI - Estacion 3 Contenedores",
+        "mode": "link",
+        "links": [
+            "7b118ca66d4fb72b",
+            "4a5b1d43ee7db4f1"
+        ],
+        "x": 615,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "6aab9d09ac1ec7f7",
+        "type": "change",
+        "z": "36e81ef4acb28477",
+        "g": "141f7d3ecefa49e2",
+        "name": "setFlowTrue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9cb31c3b480ef526",
+        "type": "switch",
+        "z": "36e81ef4acb28477",
+        "g": "141f7d3ecefa49e2",
+        "name": "getCommand",
+        "property": "payload.downlinks[0].frm_payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "AwEB",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AwAA",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 820,
+        "y": 380,
+        "wires": [
+            [
+                "6aab9d09ac1ec7f7"
+            ],
+            [
+                "c032a482bfb99070"
+            ]
+        ]
+    },
+    {
+        "id": "c032a482bfb99070",
+        "type": "change",
+        "z": "36e81ef4acb28477",
+        "g": "141f7d3ecefa49e2",
+        "name": "setFlowFalse",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a671c273e55bc45e",
+        "type": "switch",
+        "z": "36e81ef4acb28477",
+        "g": "07a501257e6c0149",
+        "name": "setResendCommand",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "boolean",
+                "vt": "boolean"
+            }
+        ],
+        "checkall": "true",
+        "repair": true,
+        "outputs": 1,
+        "x": 820,
+        "y": 120,
+        "wires": [
+            [
+                "05d631c5dbb4481a"
+            ]
+        ]
+    },
+    {
+        "id": "4f86865a29c341b9",
+        "type": "function",
+        "z": "36e81ef4acb28477",
+        "g": "07a501257e6c0149",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar payloadSend = flow.get(\"payloadSend\");\n\nif (payload !== payloadSend){\n    var resend;\n    payloadResend =payloadSend;\n    msg.payload = payloadResend\n    resend = resend ++;\n    flow.set(\"resend\", resend);\n    return msg\n}else{\n    var confirm = true\n    flow.set(\"resend\",0);\n    flow.set(\"confirmCommand\",true)\n    msg.payload = null\n    return msg\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 80,
+        "wires": [
+            [
+                "a671c273e55bc45e"
+            ]
+        ]
+    },
+    {
+        "id": "05d631c5dbb4481a",
+        "type": "change",
+        "z": "36e81ef4acb28477",
+        "g": "07a501257e6c0149",
+        "name": "setPayloadSend",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payloadSend",
+                "tot": "flow",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 120,
+        "wires": [
+            [
+                "78c69548b6db1006"
+            ]
+        ]
+    },
+    {
+        "id": "78c69548b6db1006",
+        "type": "switch",
+        "z": "36e81ef4acb28477",
+        "g": "07a501257e6c0149",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1170,
+        "y": 120,
+        "wires": [
+            [
+                "00aa770b41748a43"
+            ],
+            [
+                "949e292bee1e4f43"
+            ]
+        ]
+    },
+    {
+        "id": "949e292bee1e4f43",
+        "type": "change",
+        "z": "36e81ef4acb28477",
+        "g": "07a501257e6c0149",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,0,0]",
+                "tot": "bin"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1280,
+        "y": 160,
+        "wires": [
+            [
+                "9f1919ad66216e27"
+            ]
+        ]
+    },
+    {
+        "id": "00aa770b41748a43",
+        "type": "change",
+        "z": "36e81ef4acb28477",
+        "g": "07a501257e6c0149",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,1,1]",
+                "tot": "bin"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1280,
+        "y": 80,
+        "wires": [
+            [
+                "9f1919ad66216e27"
+            ]
+        ]
+    },
+    {
+        "id": "9f1919ad66216e27",
+        "type": "link out",
+        "z": "36e81ef4acb28477",
+        "g": "07a501257e6c0149",
+        "name": "Validate Estaacion 3",
+        "mode": "link",
+        "links": [
+            "da8a3270934a8344"
+        ],
+        "x": 1415,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "6c2955ac7622fd3e",
+        "type": "delay",
+        "z": "36e81ef4acb28477",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "774605ad717a89e5"
+            ]
+        ]
+    },
+    {
+        "id": "cddc92013b0f40a0",
+        "type": "mqtt in",
+        "z": "0c5f0583d73599de",
+        "name": "Estacion 4",
+        "topic": "v3/seguridad-ultra/devices/estacion4-ultracem/up",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "86cd9e49cb39ac18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "f57a4c9a7dd9030c"
+            ]
+        ]
+    },
+    {
+        "id": "8a5679b31b6ccb8b",
+        "type": "debug",
+        "z": "0c5f0583d73599de",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6d1ad55e69cf4793",
+        "type": "mqtt out",
+        "z": "0c5f0583d73599de",
+        "name": "Estacion 4",
+        "topic": "v3/seguridad-ultra/devices/estacion4-ultracem/down/push",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "86cd9e49cb39ac18",
+        "x": 690,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "90a860e6c2d01563",
+        "type": "inject",
+        "z": "0c5f0583d73599de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[3,0,0]",
+        "payloadType": "bin",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "b5ba75d38063db0e"
+            ]
+        ]
+    },
+    {
+        "id": "b5ba75d38063db0e",
+        "type": "function",
+        "z": "0c5f0583d73599de",
+        "name": "SetArctivarDesactivar",
+        "func": "const payload = msg.payload\n//msg.accion proviene de UI\n\nif (payload == true ){\nreturn {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 2,\n      \"frm_payload\": msg.accion.toString(\"base64\"),\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n}else{\nreturn {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 2,\n      \"frm_payload\": msg.accion.toString(\"base64\"),\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [
+                "047861daa3c19438",
+                "8a4befcab714db57"
+            ]
+        ]
+    },
+    {
+        "id": "f57a4c9a7dd9030c",
+        "type": "json",
+        "z": "0c5f0583d73599de",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "8a5679b31b6ccb8b",
+                "8f210f367204288d"
+            ]
+        ]
+    },
+    {
+        "id": "53275584f8209297",
+        "type": "comment",
+        "z": "0c5f0583d73599de",
+        "name": "Estacion 4 - Laboratorio",
+        "info": "",
+        "x": 170,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8f210f367204288d",
+        "type": "change",
+        "z": "0c5f0583d73599de",
+        "name": "Estados",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "from": "OFF",
+                "fromt": "str",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "from": "ON",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "move",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "8f2b50e9d8a51020",
+                "1d999a1ef3bf0799"
+            ]
+        ]
+    },
+    {
+        "id": "fde3d19b6839a17c",
+        "type": "link in",
+        "z": "0c5f0583d73599de",
+        "name": "setActivarDesactivar4",
+        "links": [
+            "5f17320e8a70e4fa",
+            "90d83d225f387e52",
+            "9ab6b8b5fa235f8f",
+            "ab8a2873f79bfce2"
+        ],
+        "x": 175,
+        "y": 240,
+        "wires": [
+            [
+                "b5ba75d38063db0e"
+            ]
+        ]
+    },
+    {
+        "id": "8f2b50e9d8a51020",
+        "type": "link out",
+        "z": "0c5f0583d73599de",
+        "name": "Indicador UI - Estacion 4 Laboratorio",
+        "mode": "link",
+        "links": [
+            "f58e373235340ee3",
+            "321df65c671a1708"
+        ],
+        "x": 655,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "af78e1034a9c178b",
+        "type": "change",
+        "z": "0c5f0583d73599de",
+        "g": "ba0550e174c0fa21",
+        "name": "setFlowTrue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "047861daa3c19438",
+        "type": "switch",
+        "z": "0c5f0583d73599de",
+        "g": "ba0550e174c0fa21",
+        "name": "getCommand",
+        "property": "payload.downlinks[0].frm_payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "AwEB",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AwAA",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 820,
+        "y": 380,
+        "wires": [
+            [
+                "af78e1034a9c178b"
+            ],
+            [
+                "7f90accd598a266e"
+            ]
+        ]
+    },
+    {
+        "id": "7f90accd598a266e",
+        "type": "change",
+        "z": "0c5f0583d73599de",
+        "g": "ba0550e174c0fa21",
+        "name": "setFlowFalse",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28f0635e41358d4d",
+        "type": "switch",
+        "z": "0c5f0583d73599de",
+        "g": "6b384d72e0641a20",
+        "name": "setResendCommand",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "boolean",
+                "vt": "boolean"
+            }
+        ],
+        "checkall": "true",
+        "repair": true,
+        "outputs": 1,
+        "x": 920,
+        "y": 140,
+        "wires": [
+            [
+                "58a1d69def2db8ec"
+            ]
+        ]
+    },
+    {
+        "id": "1d999a1ef3bf0799",
+        "type": "function",
+        "z": "0c5f0583d73599de",
+        "g": "6b384d72e0641a20",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar payloadSend = flow.get(\"payloadSend\");\n\nif (payload !== payloadSend){\n    var resend;\n    payloadResend =payloadSend;\n    msg.payload = payloadResend\n    resend = resend ++;\n    flow.set(\"resend\", resend);\n    return msg\n}else{\n    var confirm = true\n    flow.set(\"resend\",0);\n    flow.set(\"confirmCommand\",true)\n    msg.payload = null\n    return msg\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 100,
+        "wires": [
+            [
+                "28f0635e41358d4d"
+            ]
+        ]
+    },
+    {
+        "id": "58a1d69def2db8ec",
+        "type": "change",
+        "z": "0c5f0583d73599de",
+        "g": "6b384d72e0641a20",
+        "name": "setPayloadSend",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payloadSend",
+                "tot": "flow",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 140,
+        "wires": [
+            [
+                "5af6bd747834241a"
+            ]
+        ]
+    },
+    {
+        "id": "5af6bd747834241a",
+        "type": "switch",
+        "z": "0c5f0583d73599de",
+        "g": "6b384d72e0641a20",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1270,
+        "y": 140,
+        "wires": [
+            [
+                "479a6b10cfe7d180"
+            ],
+            [
+                "3c3309a5b5ba72c9"
+            ]
+        ]
+    },
+    {
+        "id": "3c3309a5b5ba72c9",
+        "type": "change",
+        "z": "0c5f0583d73599de",
+        "g": "6b384d72e0641a20",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,0,0]",
+                "tot": "bin"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 180,
+        "wires": [
+            [
+                "90d83d225f387e52"
+            ]
+        ]
+    },
+    {
+        "id": "479a6b10cfe7d180",
+        "type": "change",
+        "z": "0c5f0583d73599de",
+        "g": "6b384d72e0641a20",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,1,1]",
+                "tot": "bin"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 100,
+        "wires": [
+            [
+                "90d83d225f387e52"
+            ]
+        ]
+    },
+    {
+        "id": "90d83d225f387e52",
+        "type": "link out",
+        "z": "0c5f0583d73599de",
+        "g": "6b384d72e0641a20",
+        "name": "Validate Estaacion 4",
+        "mode": "link",
+        "links": [
+            "fde3d19b6839a17c"
+        ],
+        "x": 1515,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8a4befcab714db57",
+        "type": "delay",
+        "z": "0c5f0583d73599de",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 200,
+        "wires": [
+            [
+                "6d1ad55e69cf4793"
+            ]
+        ]
+    },
+    {
+        "id": "d697d4733b81a0ab",
+        "type": "mqtt in",
+        "z": "859c3987dbf4f052",
+        "name": "Estacion 5",
+        "topic": "v3/seguridad-ultra/devices/estacion5-ultracem/up",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "86cd9e49cb39ac18",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "f70e0447f72c0f77"
+            ]
+        ]
+    },
+    {
+        "id": "af372bb39afc44d6",
+        "type": "debug",
+        "z": "859c3987dbf4f052",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "7b4e806ef1251e9e",
+        "type": "mqtt out",
+        "z": "859c3987dbf4f052",
+        "name": "Estacion 5",
+        "topic": "v3/seguridad-ultra/devices/estacion5-ultracem/down/push",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "86cd9e49cb39ac18",
+        "x": 790,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0a2a65613280f67d",
+        "type": "inject",
+        "z": "859c3987dbf4f052",
+        "name": "",
+        "props": [
+            {
+                "p": "accion",
+                "v": "[3,1,1]",
+                "vt": "bin"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "7837cdcd5a567100"
+            ]
+        ]
+    },
+    {
+        "id": "7837cdcd5a567100",
+        "type": "function",
+        "z": "859c3987dbf4f052",
+        "name": "SetArctivarDesactivar",
+        "func": "const payload = msg.payload\n//msg.accion proviene de UI\n\nif (payload == true ){\nreturn {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 2,\n      \"frm_payload\": msg.accion.toString(\"base64\"),\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n}else{\nreturn {\n  \"payload\": {\n    \"downlinks\": [{\n      \"f_port\": 2,\n      \"frm_payload\": msg.accion.toString(\"base64\"),\n      \"priority\": \"NORMAL\"\n    }]\n  }\n}\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "1bdbdb2dbe7bc628",
+                "5f23155b314f0ca9"
+            ]
+        ]
+    },
+    {
+        "id": "f70e0447f72c0f77",
+        "type": "json",
+        "z": "859c3987dbf4f052",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "59f727aa4835ad7f"
+            ]
+        ]
+    },
+    {
+        "id": "ec72da7d6c736e6e",
+        "type": "comment",
+        "z": "859c3987dbf4f052",
+        "name": "Estacion 5 - Molino 1",
+        "info": "",
+        "x": 140,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "59f727aa4835ad7f",
+        "type": "change",
+        "z": "859c3987dbf4f052",
+        "name": "Estados",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "from": "OFF",
+                "fromt": "str",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "from": "ON",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "move",
+                "p": "payload.uplink_message.decoded_payload.RO1_status",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "c98a5a35885e4631",
+                "5354c01795b2e7e7"
+            ]
+        ]
+    },
+    {
+        "id": "ce0297c8e067e51d",
+        "type": "link in",
+        "z": "859c3987dbf4f052",
+        "name": "setActivarDesactivar5",
+        "links": [
+            "6d7564fe03698be1",
+            "9ab6b8b5fa235f8f",
+            "b404ed65f26acb91",
+            "6fb13acdd9c8c48c",
+            "6c7f644c4908bcda"
+        ],
+        "x": 185,
+        "y": 300,
+        "wires": [
+            [
+                "7837cdcd5a567100"
+            ]
+        ]
+    },
+    {
+        "id": "c98a5a35885e4631",
+        "type": "link out",
+        "z": "859c3987dbf4f052",
+        "name": "Indicador UI - Estacion 5 Molino 1",
+        "mode": "link",
+        "links": [
+            "7c13d6f5c13db0c6",
+            "4b9662b37f1e88d6"
+        ],
+        "x": 625,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "722728d29d7df2d5",
+        "type": "change",
+        "z": "859c3987dbf4f052",
+        "g": "ce2ec831b45df6aa",
+        "name": "setFlowTrue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1bdbdb2dbe7bc628",
+        "type": "switch",
+        "z": "859c3987dbf4f052",
+        "g": "ce2ec831b45df6aa",
+        "name": "getCommand",
+        "property": "payload.downlinks[0].frm_payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "AwEB",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AwAA",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 780,
+        "y": 380,
+        "wires": [
+            [
+                "722728d29d7df2d5"
+            ],
+            [
+                "064cf99b73bc261b"
+            ]
+        ]
+    },
+    {
+        "id": "064cf99b73bc261b",
+        "type": "change",
+        "z": "859c3987dbf4f052",
+        "g": "ce2ec831b45df6aa",
+        "name": "setFlowFalse",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadSend",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "sendCommand",
+                "pt": "flow",
+                "to": "payload.downlinks[0].frm_payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a518bc8cd8ee03d",
+        "type": "switch",
+        "z": "859c3987dbf4f052",
+        "g": "869f1b789f0ed484",
+        "name": "setResendCommand",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "boolean",
+                "vt": "boolean"
+            }
+        ],
+        "checkall": "true",
+        "repair": true,
+        "outputs": 1,
+        "x": 840,
+        "y": 100,
+        "wires": [
+            [
+                "7a741f086dc22784"
+            ]
+        ]
+    },
+    {
+        "id": "5354c01795b2e7e7",
+        "type": "function",
+        "z": "859c3987dbf4f052",
+        "g": "869f1b789f0ed484",
+        "name": "",
+        "func": "var payload = msg.payload;\nvar payloadSend = flow.get(\"payloadSend\");\n\nif (payload !== payloadSend){\n    var resend;\n    payloadResend = payloadSend;\n    msg.payload = payloadResend;\n    resend = resend ++;\n    flow.set(\"resend\", resend);\n    return msg\n}else{\n    var confirm = true\n    flow.set(\"resend\",0);\n    flow.set(\"confirmCommand\",true)\n    msg.payload = null\n    return msg\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 60,
+        "wires": [
+            [
+                "5a518bc8cd8ee03d",
+                "af372bb39afc44d6"
+            ]
+        ]
+    },
+    {
+        "id": "7a741f086dc22784",
+        "type": "change",
+        "z": "859c3987dbf4f052",
+        "g": "869f1b789f0ed484",
+        "name": "setPayloadSend",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payloadSend",
+                "tot": "flow",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 100,
+        "wires": [
+            [
+                "f56e8b51a45061f9"
+            ]
+        ]
+    },
+    {
+        "id": "f56e8b51a45061f9",
+        "type": "switch",
+        "z": "859c3987dbf4f052",
+        "g": "869f1b789f0ed484",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1190,
+        "y": 100,
+        "wires": [
+            [
+                "880aeb6a7204af17"
+            ],
+            [
+                "2e44d2ea0f20ba5b"
+            ]
+        ]
+    },
+    {
+        "id": "2e44d2ea0f20ba5b",
+        "type": "change",
+        "z": "859c3987dbf4f052",
+        "g": "869f1b789f0ed484",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,0,0]",
+                "tot": "bin"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1300,
+        "y": 140,
+        "wires": [
+            [
+                "6fb13acdd9c8c48c"
+            ]
+        ]
+    },
+    {
+        "id": "880aeb6a7204af17",
+        "type": "change",
+        "z": "859c3987dbf4f052",
+        "g": "869f1b789f0ed484",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,1,1]",
+                "tot": "bin"
+            },
+            {
+                "t": "delete",
+                "p": "qos",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retain",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1300,
+        "y": 60,
+        "wires": [
+            [
+                "6fb13acdd9c8c48c"
+            ]
+        ]
+    },
+    {
+        "id": "6fb13acdd9c8c48c",
+        "type": "link out",
+        "z": "859c3987dbf4f052",
+        "g": "869f1b789f0ed484",
+        "name": "Validate Estaacion 4",
+        "mode": "link",
+        "links": [
+            "ce0297c8e067e51d"
+        ],
+        "x": 1435,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5f23155b314f0ca9",
+        "type": "delay",
+        "z": "859c3987dbf4f052",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "7b4e806ef1251e9e"
+            ]
+        ]
+    },
+    {
+        "id": "89091c7089bc7bf6",
+        "type": "ui_button",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Boton general",
+        "group": "47d24faaca21391a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.colour}}",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 540,
+        "y": 340,
+        "wires": [
+            [
+                "de0b51b91090d8ba"
+            ]
+        ]
+    },
+    {
+        "id": "feb6c7dd5522bf87",
+        "type": "change",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "REGLA ON",
+        "rules": [
+            {
+                "t": "set",
+                "p": "colour",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "estado",
+                "pt": "msg",
+                "to": "<i class=\"fa fa-bell-o\"></i> ENCENDER",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,0,0]",
+                "tot": "bin"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5f736c496a9a47f",
+        "type": "inject",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "6c909b0b65d9931f"
+            ]
+        ]
+    },
+    {
+        "id": "2e8e56c73f3c796f",
+        "type": "function",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "state",
+        "func": "var state = context.state || false;\nstate = !state;\ncontext.state = state;\nif (state) { return [msg,null]; }\nelse { return [null,msg]; }\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 235,
+        "y": 300,
+        "wires": [
+            [
+                "feb6c7dd5522bf87"
+            ],
+            [
+                "6c909b0b65d9931f"
+            ]
+        ]
+    },
+    {
+        "id": "6c909b0b65d9931f",
+        "type": "change",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "REGLA OFF",
+        "rules": [
+            {
+                "t": "set",
+                "p": "colour",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "estado",
+                "pt": "msg",
+                "to": "<i class=\"fa fa-bell\"></i> APAGAR",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "accion",
+                "pt": "msg",
+                "to": "[3,1,1]",
+                "tot": "bin"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6180f25856b38a9",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 5,
+        "group": "5c38a953c0b01237",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Molino 2",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado zona Molino2",
+        "x": 1400,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "5a172d5368623a96",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "c0895d1184de1d46"
+        ],
+        "x": 1235,
+        "y": 520,
+        "wires": [
+            [
+                "d6180f25856b38a9",
+                "c5330c14f1ebb9ed"
+            ]
+        ]
+    },
+    {
+        "id": "7339aed35382a8ce",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 2,
+        "group": "5c38a953c0b01237",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Logistica",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado zona Logistica",
+        "x": 1400,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d2bc44a39eb2f04f",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "bc0551ca9c7c7e31"
+        ],
+        "x": 1235,
+        "y": 200,
+        "wires": [
+            [
+                "7339aed35382a8ce",
+                "815dc18d6e062368"
+            ]
+        ]
+    },
+    {
+        "id": "cf5e4bc3c483c895",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 1,
+        "group": "5c38a953c0b01237",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Contenedores",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado Contenedores",
+        "x": 1400,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "7b118ca66d4fb72b",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "ab58c1020ba1d709"
+        ],
+        "x": 1235,
+        "y": 100,
+        "wires": [
+            [
+                "cf5e4bc3c483c895",
+                "e0d486c54d6fb7a7"
+            ]
+        ]
+    },
+    {
+        "id": "03fce73f19a6e4d4",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 3,
+        "group": "5c38a953c0b01237",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Laboratorio",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado Laboratorio",
+        "x": 1390,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "668ac5e198498088",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 4,
+        "group": "5c38a953c0b01237",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Molino 1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado Molino 1",
+        "x": 1380,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "f58e373235340ee3",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "8f2b50e9d8a51020"
+        ],
+        "x": 1235,
+        "y": 300,
+        "wires": [
+            [
+                "03fce73f19a6e4d4",
+                "73113c406233d5b0"
+            ]
+        ]
+    },
+    {
+        "id": "7c13d6f5c13db0c6",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "c98a5a35885e4631"
+        ],
+        "x": 1235,
+        "y": 420,
+        "wires": [
+            [
+                "668ac5e198498088",
+                "e5e5a0cd657df550"
+            ]
+        ]
+    },
+    {
+        "id": "e5e5a0cd657df550",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "73113c406233d5b0",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e0d486c54d6fb7a7",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "815dc18d6e062368",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c5330c14f1ebb9ed",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "480a0735fab0c53e",
+        "type": "comment",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Estado de Alarmas - Leds",
+        "info": "",
+        "x": 1310,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "3703b779c52cfae6",
+        "type": "ui_template",
+        "z": "9f9ed44e98a2fd9d",
+        "group": "",
+        "name": "Master style override",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n/*body.nr-dashboard-theme {\n background-color: #333333;\n font-family: Calibri;\n}*/\nbutton, html, input, select, textarea {\n font-family: Calibri;\n}\n/*\nbody.nr-dashboard-theme md-content md-card {\n background-color: #33333300;\n color: #d0d0d0;\n}\n*/\n/*body.nr-dashboard-theme md-toolbar {\n background-image: linear-gradient(to right, #404040, #737373);\n box-shadow: 0px 1px 20px #0000008a;\n}\n.nr-dashboard-theme ui-card-panel {\n background-image: linear-gradient(to bottom right, #404040, #737373);\n border: 1px solid #555555;\n box-shadow: 0 0 20px #00000066;\n}\n\n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n color: #2eb82e;\n text-shadow: 0 0 2px black;\n}\n*/\n.nr-dashboard-theme .nr-dashboard-form-button {\n background-image: linear-gradient(to bottom right, #8a8a8a6e, #00000070);\n background-color: #00ad03;\n color: #d0d0d0;\n text-shadow: 0 0 2px #525252;\n border-radius:6px;\n}\n\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n background-image: linear-gradient(to bottom right, #8a8a8a6e, #00000070);\n background-color: #00ad03;\n color: #d0d0d0;\n text-shadow: 0 0 2px #525252;\n border-radius:30px;\n}\n.nr-dashboard-theme .nr-dashboard-button .md-button:hover {\n background-color: #00de00;\n}\n\n.nr-dashboard-theme .nr-dashboard-switch md-switch .md-thumb {\n background-image: linear-gradient(to bottom right, #48b349, #115009);\n}\n\n.nr-dashboard-button .md-button {\n box-shadow: 0 1px 3px 0 rgba(0,0,0,.26)!important;\n width:100%!important;\n height: 100%!important;\n margin: 0!important;\n min-width: 0!important;\n min-height: 0!important;\n}\n/*\n.nr-dashboard-theme .nr-dashboard-slider .md-thumb:after {\n background-image: linear-gradient(to bottom right, #48b349, #115009);\n border-style: none;\n}\n.nr-dashboard-theme .nr-dashboard-numeric .value {\n background-color: #33333300;\n color:#d0d0d0;\n}\n\n.nr-dashboard-numeric .value {\n font-weight: 700;\n text-align: center;\n border: 0;\n}\n\n\n.nr-dashboard-form {\n display: inline-block;\n width: 100%;\n overflow-y: visible;\n}\n#SETTINGS_TEATED_cards {\n min-height: 260px;\n}\n*/\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 1440,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "184576dc217222a5",
+        "type": "ui_button",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "9ea4ff134399ca30",
+        "name": "Boton Logistica",
+        "group": "cddde00d988ef4d5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.colour}}",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "onClick",
+        "topicType": "str",
+        "x": 480,
+        "y": 660,
+        "wires": [
+            [
+                "a857fcf5ac084baa"
+            ]
+        ]
+    },
+    {
+        "id": "3dc1ea21e3cf9391",
+        "type": "ui_button",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "45c310f66f1703bf",
+        "name": "Boton Laboratorio",
+        "group": "35eb59fbc8dbdd30",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.colour}}",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "50c018294de72b21"
+            ]
+        ]
+    },
+    {
+        "id": "d09ed806cf806113",
+        "type": "ui_button",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "3987c7780219e0f8",
+        "name": "Boton Molino 1",
+        "group": "54897153aa51c77e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.colour}}",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 480,
+        "y": 1060,
+        "wires": [
+            [
+                "514fdb57550f1119"
+            ]
+        ]
+    },
+    {
+        "id": "e2bbc89556ca2ed7",
+        "type": "ui_button",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "7b3279292da1d8fb",
+        "name": "Boton Molino 2",
+        "group": "d2451bc3477ac4e9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.colour}}",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 480,
+        "y": 860,
+        "wires": [
+            [
+                "7b66b7bed75d5c2a"
+            ]
+        ]
+    },
+    {
+        "id": "06fbcd8a15e07595",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "9ea4ff134399ca30",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "a857fcf5ac084baa",
+        "type": "subflow:be6d86c62fbc41b0",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "9ea4ff134399ca30",
+        "name": "",
+        "x": 270,
+        "y": 660,
+        "wires": [
+            [
+                "184576dc217222a5"
+            ],
+            [
+                "06fbcd8a15e07595",
+                "928ecb7754f07842"
+            ]
+        ]
+    },
+    {
+        "id": "50c018294de72b21",
+        "type": "subflow:be6d86c62fbc41b0",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "45c310f66f1703bf",
+        "name": "",
+        "x": 270,
+        "y": 460,
+        "wires": [
+            [
+                "3dc1ea21e3cf9391"
+            ],
+            [
+                "91608210b1a9e3fa",
+                "5f17320e8a70e4fa"
+            ]
+        ]
+    },
+    {
+        "id": "514fdb57550f1119",
+        "type": "subflow:be6d86c62fbc41b0",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "3987c7780219e0f8",
+        "name": "",
+        "x": 270,
+        "y": 1060,
+        "wires": [
+            [
+                "d09ed806cf806113"
+            ],
+            [
+                "0376164c259d3059",
+                "b404ed65f26acb91"
+            ]
+        ]
+    },
+    {
+        "id": "7b66b7bed75d5c2a",
+        "type": "subflow:be6d86c62fbc41b0",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "7b3279292da1d8fb",
+        "name": "",
+        "x": 270,
+        "y": 860,
+        "wires": [
+            [
+                "e2bbc89556ca2ed7"
+            ],
+            [
+                "feabef15d885f55e",
+                "5f027ec7369bdad0"
+            ]
+        ]
+    },
+    {
+        "id": "91608210b1a9e3fa",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "45c310f66f1703bf",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "0376164c259d3059",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "3987c7780219e0f8",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "feabef15d885f55e",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "7b3279292da1d8fb",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "928ecb7754f07842",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "9ea4ff134399ca30",
+        "name": "Front Boton Logistica",
+        "mode": "link",
+        "links": [
+            "11def91591f9fbfa"
+        ],
+        "x": 425,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "5f17320e8a70e4fa",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "45c310f66f1703bf",
+        "name": "Front Boton Laboratorio",
+        "mode": "link",
+        "links": [
+            "fde3d19b6839a17c"
+        ],
+        "x": 415,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "b404ed65f26acb91",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "3987c7780219e0f8",
+        "name": "Front Boton Molino",
+        "mode": "link",
+        "links": [
+            "ce0297c8e067e51d"
+        ],
+        "x": 415,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "5f027ec7369bdad0",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "7b3279292da1d8fb",
+        "name": "Front Boton Molino 2",
+        "mode": "link",
+        "links": [
+            "bc3ecc7fb17f628a"
+        ],
+        "x": 415,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b9380069376cdd60",
+        "type": "comment",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "45c310f66f1703bf",
+        "name": "Enviar al modulo MQTT->",
+        "info": "",
+        "x": 270,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "c6b922752e428a64",
+        "type": "ui_button",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "0e90a54126955e0b",
+        "name": "Boton Contenedores",
+        "group": "1b3982f888f2aa11",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.label}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.colour}}",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 500,
+        "y": 60,
+        "wires": [
+            [
+                "a80f8a754a0eea72"
+            ]
+        ]
+    },
+    {
+        "id": "a80f8a754a0eea72",
+        "type": "subflow:be6d86c62fbc41b0",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "0e90a54126955e0b",
+        "name": "",
+        "x": 270,
+        "y": 60,
+        "wires": [
+            [
+                "c6b922752e428a64"
+            ],
+            [
+                "6c92f7c93d5747b9",
+                "70b0eba5a847a894"
+            ]
+        ]
+    },
+    {
+        "id": "6c92f7c93d5747b9",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "0e90a54126955e0b",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "70b0eba5a847a894",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "0e90a54126955e0b",
+        "name": "Front Boton Contenedores",
+        "mode": "link",
+        "links": [
+            "da8a3270934a8344"
+        ],
+        "x": 415,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "870729d6ab3c3981",
+        "type": "comment",
+        "z": "9f9ed44e98a2fd9d",
+        "g": "0e90a54126955e0b",
+        "name": "Enviar al modulo MQTT->",
+        "info": "",
+        "x": 270,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "18dd3114e934bfbe",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 2,
+        "group": "cddde00d988ef4d5",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Logistica",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado zona Logistica",
+        "x": 1740,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "3c30aa170b8695f6",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "bc0551ca9c7c7e31"
+        ],
+        "x": 1575,
+        "y": 200,
+        "wires": [
+            [
+                "18dd3114e934bfbe",
+                "87a3d642988f2181"
+            ]
+        ]
+    },
+    {
+        "id": "87a3d642988f2181",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1710,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0f838ce6a9795c61",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 2,
+        "group": "1b3982f888f2aa11",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Contenedores",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado Contenedores",
+        "x": 1740,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4a5b1d43ee7db4f1",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "ab58c1020ba1d709"
+        ],
+        "x": 1575,
+        "y": 100,
+        "wires": [
+            [
+                "0f838ce6a9795c61",
+                "a74e23c9878a2969"
+            ]
+        ]
+    },
+    {
+        "id": "a74e23c9878a2969",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1710,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d773434fe4e390be",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 2,
+        "group": "35eb59fbc8dbdd30",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Laboratorio",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado Laboratorio",
+        "x": 1730,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "321df65c671a1708",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "8f2b50e9d8a51020"
+        ],
+        "x": 1575,
+        "y": 300,
+        "wires": [
+            [
+                "d773434fe4e390be",
+                "5358a41de8f47f94"
+            ]
+        ]
+    },
+    {
+        "id": "5358a41de8f47f94",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1710,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "527b76056ed6dc9b",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 2,
+        "group": "54897153aa51c77e",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Molino 1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado Molino 1",
+        "x": 1720,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4b9662b37f1e88d6",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "c98a5a35885e4631"
+        ],
+        "x": 1575,
+        "y": 420,
+        "wires": [
+            [
+                "527b76056ed6dc9b",
+                "2bdf9e4907060720"
+            ]
+        ]
+    },
+    {
+        "id": "2bdf9e4907060720",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1710,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "4335ea5fadd6f141",
+        "type": "ui_led",
+        "z": "9f9ed44e98a2fd9d",
+        "order": 2,
+        "group": "d2451bc3477ac4e9",
+        "width": 0,
+        "height": 0,
+        "label": "Estado alarma zona Molino 2",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Estado zona Molino2",
+        "x": 1740,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "4c79421f31121e08",
+        "type": "link in",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "links": [
+            "c0895d1184de1d46"
+        ],
+        "x": 1575,
+        "y": 520,
+        "wires": [
+            [
+                "4335ea5fadd6f141",
+                "2f3d241771705928"
+            ]
+        ]
+    },
+    {
+        "id": "2f3d241771705928",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1710,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "de0b51b91090d8ba",
+        "type": "subflow:be6d86c62fbc41b0",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "89091c7089bc7bf6"
+            ],
+            [
+                "384eb129f676db8d",
+                "3387c275b52d564c",
+                "5687a1544af7be85",
+                "21e0e20cd05fdb46",
+                "9a3165f73d44dec5",
+                "01ac8db1418f48b0"
+            ]
+        ]
+    },
+    {
+        "id": "384eb129f676db8d",
+        "type": "debug",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 250,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "01ac8db1418f48b0",
+        "type": "delay",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 880,
+        "y": 260,
+        "wires": [
+            [
+                "617b98727162ffdb"
+            ]
+        ]
+    },
+    {
+        "id": "9a3165f73d44dec5",
+        "type": "delay",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 880,
+        "y": 300,
+        "wires": [
+            [
+                "8cc9e3921315111d"
+            ]
+        ]
+    },
+    {
+        "id": "21e0e20cd05fdb46",
+        "type": "delay",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 880,
+        "y": 340,
+        "wires": [
+            [
+                "c96abd4e1e453454"
+            ]
+        ]
+    },
+    {
+        "id": "5687a1544af7be85",
+        "type": "delay",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 880,
+        "y": 380,
+        "wires": [
+            [
+                "ab8a2873f79bfce2"
+            ]
+        ]
+    },
+    {
+        "id": "3387c275b52d564c",
+        "type": "delay",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 880,
+        "y": 420,
+        "wires": [
+            [
+                "6c7f644c4908bcda"
+            ]
+        ]
+    },
+    {
+        "id": "617b98727162ffdb",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Boton general",
+        "mode": "link",
+        "links": [
+            "bc3ecc7fb17f628a"
+        ],
+        "x": 995,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8cc9e3921315111d",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Boton general",
+        "mode": "link",
+        "links": [
+            "11def91591f9fbfa"
+        ],
+        "x": 995,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c96abd4e1e453454",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Boton general",
+        "mode": "link",
+        "links": [
+            "da8a3270934a8344"
+        ],
+        "x": 995,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ab8a2873f79bfce2",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Boton general",
+        "mode": "link",
+        "links": [
+            "fde3d19b6839a17c"
+        ],
+        "x": 995,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "6c7f644c4908bcda",
+        "type": "link out",
+        "z": "9f9ed44e98a2fd9d",
+        "name": "Boton general",
+        "mode": "link",
+        "links": [
+            "ce0297c8e067e51d"
+        ],
+        "x": 995,
+        "y": 420,
         "wires": []
     }
 ]
